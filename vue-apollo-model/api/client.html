@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="简体中文">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Client相关API | Vue Apollo Model</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/vue-apollo-model/favicon.png">
+    <meta name="description" content="基于Vue.js状态管理方案">
+    
+    <link rel="preload" href="/vue-apollo-model/assets/css/0.styles.7cad19fc.css" as="style"><link rel="preload" href="/vue-apollo-model/assets/js/app.df4d707a.js" as="script"><link rel="preload" href="/vue-apollo-model/assets/js/2.a9470760.js" as="script"><link rel="preload" href="/vue-apollo-model/assets/js/9.f747ebda.js" as="script"><link rel="prefetch" href="/vue-apollo-model/assets/js/10.699f17a4.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/11.92167b45.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/12.5f594f6e.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/13.b7452708.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/14.b03a00bd.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/15.4e90052a.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/16.d90a6d05.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/17.b93d7121.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/18.e34d2dfb.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/19.75f18cd3.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/3.2e71fe32.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/4.11ed93ed.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/5.255dee7d.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/6.9c4a5e32.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/7.e293f4b4.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/8.5425c57e.js">
+    <link rel="stylesheet" href="/vue-apollo-model/assets/css/0.styles.7cad19fc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-apollo-model/" class="home-link router-link-active"><!----> <span class="site-name">Vue Apollo Model</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-apollo-model/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/vue-apollo-model/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/vue-apollo-model/api/" class="nav-link router-link-active">
+  API参考
+</a></div> <a href="https://github.com/skyline0705/vue-apollo-model" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-apollo-model/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/vue-apollo-model/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/vue-apollo-model/api/" class="nav-link router-link-active">
+  API参考
+</a></div> <a href="https://github.com/skyline0705/vue-apollo-model" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>API参考</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-apollo-model/api/model.html" class="sidebar-link">Model相关API</a></li><li><a href="/vue-apollo-model/api/client.html" aria-current="page" class="active sidebar-link">Client相关API</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue-apollo-model/api/client.html#createclient" class="sidebar-link">createClient</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue-apollo-model/api/client.html#restclient-options" class="sidebar-link">RestClient Options</a></li><li class="sidebar-sub-header"><a href="/vue-apollo-model/api/client.html#拦截器" class="sidebar-link">拦截器</a></li></ul></li></ul></li><li><a href="/vue-apollo-model/api/query.html" class="sidebar-link">Query相关API</a></li><li><a href="/vue-apollo-model/api/mutation.html" class="sidebar-link">Mutation相关API</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="client相关api"><a href="#client相关api" class="header-anchor">#</a> Client相关API</h1> <h2 id="createclient"><a href="#createclient" class="header-anchor">#</a> createClient</h2> <blockquote><p>创建一个client实例</p></blockquote> <h3 id="restclient-options"><a href="#restclient-options" class="header-anchor">#</a> RestClient Options</h3> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">type</span> <span class="token class-name">ClientOptions</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 请求方法，默认为GET</span>
+    method<span class="token operator">:</span> <span class="token string">&quot;get&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;post&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;delete&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;put&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;patch&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;options&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;head&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;trace&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;connect&quot;</span><span class="token punctuation">;</span>
+    <span class="token comment">// 对于全局fetch的替换，默认使用window.fetch进行实际请求发送</span>
+    fetch<span class="token operator">?</span><span class="token operator">:</span> <span class="token keyword">typeof</span> fetch<span class="token punctuation">;</span>
+    <span class="token comment">// 同fetch的credentials，设定Cookie携带方式，默认为&quot;include&quot;</span>
+    credentials<span class="token operator">?</span><span class="token operator">:</span> <span class="token string">&quot;include&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;omit&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;same-origin&quot;</span><span class="token punctuation">;</span>
+    <span class="token comment">// 请求携带的HTTP Header，其中content-type默认为'application/json'</span>
+    headers<span class="token operator">?</span><span class="token operator">:</span> HTTPHeaders<span class="token punctuation">;</span>
+    <span class="token comment">// 请求超时时间配置，默认为60s</span>
+    timeout<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div> <h3 id="拦截器"><a href="#拦截器" class="header-anchor">#</a> 拦截器</h3> <blockquote><p>在请求发起前/发起后对请求/响应的数据进行拦截和替换</p></blockquote> <div class="language-TypeScript extra-class"><pre class="language-typescript"><code><span class="token comment">// 请求拦截器设置</span>
+<span class="token keyword">type</span> <span class="token class-name">TransformRequest</span> <span class="token operator">=</span> <span class="token punctuation">(</span>params<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token builtin">any</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 响应拦截器设置</span>
+<span class="token keyword">type</span> <span class="token class-name">TransformResponse</span> <span class="token operator">=</span> <span class="token punctuation">(</span>result<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">any</span><span class="token operator">&gt;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">type</span> <span class="token class-name">Interceptor</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function">use</span><span class="token punctuation">(</span>onResolve<span class="token operator">:</span> TransformRequest <span class="token operator">|</span> TransformResponse<span class="token punctuation">,</span> onReject<span class="token operator">?</span><span class="token operator">:</span> TransformRequest <span class="token operator">|</span> TransformResponse<span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-apollo-model/api/model.html" class="prev">
+        Model相关API
+      </a></span> <span class="next"><a href="/vue-apollo-model/api/query.html">
+        Query相关API
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-apollo-model/assets/js/app.df4d707a.js" defer></script><script src="/vue-apollo-model/assets/js/2.a9470760.js" defer></script><script src="/vue-apollo-model/assets/js/9.f747ebda.js" defer></script>
+  </body>
+</html>

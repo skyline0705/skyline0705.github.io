@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="简体中文">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Client | Vue Apollo Model</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/vue-apollo-model/favicon.png">
+    <meta name="description" content="基于Vue.js状态管理方案">
+    
+    <link rel="preload" href="/vue-apollo-model/assets/css/0.styles.7cad19fc.css" as="style"><link rel="preload" href="/vue-apollo-model/assets/js/app.df4d707a.js" as="script"><link rel="preload" href="/vue-apollo-model/assets/js/2.a9470760.js" as="script"><link rel="preload" href="/vue-apollo-model/assets/js/14.b03a00bd.js" as="script"><link rel="prefetch" href="/vue-apollo-model/assets/js/10.699f17a4.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/11.92167b45.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/12.5f594f6e.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/13.b7452708.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/15.4e90052a.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/16.d90a6d05.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/17.b93d7121.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/18.e34d2dfb.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/19.75f18cd3.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/3.2e71fe32.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/4.11ed93ed.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/5.255dee7d.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/6.9c4a5e32.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/7.e293f4b4.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/8.5425c57e.js"><link rel="prefetch" href="/vue-apollo-model/assets/js/9.f747ebda.js">
+    <link rel="stylesheet" href="/vue-apollo-model/assets/css/0.styles.7cad19fc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-apollo-model/" class="home-link router-link-active"><!----> <span class="site-name">Vue Apollo Model</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-apollo-model/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/vue-apollo-model/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/vue-apollo-model/api/" class="nav-link">
+  API参考
+</a></div> <a href="https://github.com/skyline0705/vue-apollo-model" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-apollo-model/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/vue-apollo-model/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/vue-apollo-model/api/" class="nav-link">
+  API参考
+</a></div> <a href="https://github.com/skyline0705/vue-apollo-model" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/vue-apollo-model/guide/" aria-current="page" class="sidebar-link">简介</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-apollo-model/guide/installation.html" class="sidebar-link">安装</a></li><li><a href="/vue-apollo-model/guide/store.html" class="sidebar-link">Store</a></li><li><a href="/vue-apollo-model/guide/client.html" aria-current="page" class="active sidebar-link">Client</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue-apollo-model/guide/client.html#创建client" class="sidebar-link">创建Client</a></li><li class="sidebar-sub-header"><a href="/vue-apollo-model/guide/client.html#注册拦截器" class="sidebar-link">注册拦截器</a></li></ul></li><li><a href="/vue-apollo-model/guide/model.html" class="sidebar-link">Model</a></li><li><a href="/vue-apollo-model/guide/component.html" class="sidebar-link">在组件中引入</a></li><li><a href="/vue-apollo-model/guide/server-side-render.html" class="sidebar-link">服务端渲染</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="client"><a href="#client" class="header-anchor">#</a> Client</h1> <p>在Model中所需要使用的请求实例</p> <h2 id="创建client"><a href="#创建client" class="header-anchor">#</a> 创建Client</h2> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createClient <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-apollo-model'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 注册RestClient</span>
+<span class="token keyword">const</span> restClient <span class="token operator">=</span> <span class="token function">createClient</span><span class="token punctuation">(</span><span class="token string">'rest'</span><span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 注册GQLClient（暂不可用</span>
+<span class="token keyword">const</span> gqlClient <span class="token operator">=</span> <span class="token function">createClient</span><span class="token punctuation">(</span><span class="token string">'gql'</span><span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="注册拦截器"><a href="#注册拦截器" class="header-anchor">#</a> 注册拦截器</h2> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// 请求拦截器</span>
+restClient<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>request<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">'id'</span> <span class="token keyword">in</span> params<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        params<span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> params<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 响应拦截器</span>
+restClient<span class="token punctuation">.</span>interceptors<span class="token punctuation">.</span>response<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">{</span> data <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span>result <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> data<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">throw</span> data<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">throw</span> error<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>详细<code>options</code>配置与<code>拦截器配置</code>，请参考<a href="/vue-apollo-model/api/client.html#createclient">createClient</a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-apollo-model/guide/store.html" class="prev">
+        Store
+      </a></span> <span class="next"><a href="/vue-apollo-model/guide/model.html">
+        Model
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vue-apollo-model/assets/js/app.df4d707a.js" defer></script><script src="/vue-apollo-model/assets/js/2.a9470760.js" defer></script><script src="/vue-apollo-model/assets/js/14.b03a00bd.js" defer></script>
+  </body>
+</html>
